@@ -152,3 +152,9 @@ h6 {
   will-change: transform;
   contain: layout style paint;
 }
+
+@media (max-width: 768px) {
+  .hero-background {
+    background-image: url("/hero-bg-mobile.png");
+  }
+}

@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     template: "%s | Open Designers",
   },
   description:
-    "Open Designers is an open-source design and dev community shaping the future of digital products. We are an open-source design movement driven by the belief that good design should be accessible.",
+    "Open Designers is an open-source design and dev community shaping the future of digital products. We believe good design should be accessible to everyone.",
   keywords: ["Open Designers", "design", "UI", "UX", "screenshots"],
   creator: "Open Designers",
   publisher: "Open Designers",
   openGraph: {
     title: "Open Designers",
     description:
-      "Open Designers is an open-source design and dev community shaping the future of digital products. We are an open-source design movement driven by the belief that good design should be accessible.",
+      "Open Designers is an open-source design and dev community shaping the future of digital products. We believe good design should be accessible to everyone.",
     type: "website",
     siteName: "Open Designers",
     locale: "en_US",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Open Designers",
     description:
-      "Open Designers is an open-source design and dev community shaping the future of digital products. We are an open-source design movement driven by the belief that good design should be accessible.",
+      "Open Designers is an open-source design and dev community shaping the future of digital products. We believe good design should be accessible to everyone.",
     images: [
       {
         url: "/og-image.png",

@@ -10,17 +10,18 @@ import Link from "next/link";
 import CustomButton from "@/components/custom-button";
 import Details from "@/components/details";
 import { does, team, trive } from "@/constants/data";
+import Header from "@/components/header";
 
 export default function Home() {
   return (
     <>
-      <header className="hero-background">
-        <section className="p-4 container mx-auto lg:w-[700px] w-full space-y-10 py-20 lg:py-30">
-          <h1 className="text-[2.5rem] lg:text-[5rem] text-center text-[#0E0E0E] font-[400] leading-[98%]">
+      <Header>
+        <section className="p-4 container mx-auto lg:w-[700px] w-full space-y-10 py-14 lg:py-30">
+          <h1 className="text-[2.7rem] lg:text-[5rem] text-center text-[#0E0E0E] font-[400] leading-[98%]">
             Design, build, and share together. We are open.
           </h1>
 
-          <p className="text-center text-black text-lg">
+          <p className="text-center text-black text-lg p-2">
             Open Designers is an open-source design and dev community shaping
             the future of digital products. We are an open-source design
             movement driven by the belief that good design should be accessible.
@@ -32,17 +33,17 @@ export default function Home() {
           </p>
 
           <div className="flex items-center flex-wrap justify-center gap-4">
-            <BlackButton>
+            <BlackButton className="h-12">
               <Image src={figma} alt="Figma logo icon" className="w-6 h-6" />
               <span className="text-lg font-light">Figma Contributions</span>
             </BlackButton>
 
-            <BlackButton>
+            <BlackButton className="h-12">
               <Image src={code} alt="Code icon" className="w-6 h-6" />
               <span className="text-lg font-light">Open Devs</span>
             </BlackButton>
 
-            <BlackButton>
+            <BlackButton className="h-12">
               <Image
                 src={pixel}
                 alt="Pixel Scout logo icon"
@@ -52,9 +53,9 @@ export default function Home() {
             </BlackButton>
           </div>
         </section>
-      </header>
+      </Header>
 
-      <section className="bg-[#FBF9F5] px-4 py-20">
+      <section className="bg-[#FBF9F5] px-4 py-10 lg:py-20">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mx-auto">
             {does.map(({ title, description, img, link }, index) => (
@@ -96,7 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-20">
+      <section className="px-4 py-10 lg:py-20">
         <div className="container mx-auto">
           <Details />
 
@@ -106,7 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#FBF9F5] px-4 py-20">
+      <section className="bg-[#FBF9F5] px-4 py-10 lg:py-20">
         <div className="container mx-auto">
           <h1 className="text-[2.5rem] lg:text-[4rem] font-[400] text-center text-[#0E0E0E]">
             How we thrive
@@ -144,7 +145,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#FBF9F5] px-4 py-20">
+      <section className="bg-[#FBF9F5] px-4 py-10 lg:py-20">
         <div className="container mx-auto">
           <h1 className="text-[2.5rem] lg:text-[4rem] font-[400] text-center text-[#0E0E0E]">
             Team & Contributors

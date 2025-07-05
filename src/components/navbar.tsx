@@ -37,7 +37,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="p-2 max-w-5xl sticky top-4 mx-auto bg-[#1C1C1CE0] rounded-t-lg lg:rounded-t-full rounded-b-lg lg:rounded-b-full flex justify-between items-center backdrop-blur-24  z-50">
+    <div className="relative p-2 m-[1rem]! max-w-5xl lg:mx-auto! bg-[#1C1C1CE0] rounded-t-lg lg:rounded-t-full rounded-b-lg lg:rounded-b-full flex justify-between items-center">
       <Link href="/" onClick={() => setOpen(false)}>
         <div
           className="flex items-baseline cursor-pointer object-fit w-[120px] lg:w-[130px]"
