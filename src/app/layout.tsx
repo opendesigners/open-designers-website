@@ -25,6 +25,15 @@ export const metadata: Metadata = {
   keywords: ["Open Designers", "design", "UI", "UX", "screenshots"],
   creator: "Open Designers",
   publisher: "Open Designers",
+  alternates: {
+    canonical: "https://open-designers.org",
+  },
+  authors: [
+    {
+      name: "Open Designers",
+      url: "https://open-designers.org",
+    },
+  ],
   openGraph: {
     title: "Open Designers",
     description:
