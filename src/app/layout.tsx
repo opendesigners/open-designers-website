@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title: "Open Designers",
+    title: "Open Designers | Open-Source Design Community & Projects.",
     description:
       "Open Designers is an open-source design and dev community shaping the future of digital products. We believe good design should be accessible to everyone.",
     type: "website",
