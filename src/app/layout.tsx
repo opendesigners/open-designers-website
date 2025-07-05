@@ -17,7 +17,7 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || "https://open-designers.org"),
   title: {
-    default: "Open Designers",
+    default: "Open Designers | Open-Source Design Community & Projects.",
     template: "%s | Open Designers",
   },
   description:
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/logo.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Open Designers Logo",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Open Designers is an open-source design and dev community shaping the future of digital products. We are an open-source design movement driven by the belief that good design should be accessible.",
     images: [
       {
-        url: "/logo.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Open Designers Logo",

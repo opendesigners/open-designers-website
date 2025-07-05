@@ -1,6 +1,6 @@
 "use client";
 
-// import CookieConsent from "@/components/cookie-consent";
+import CookieConsent from "@/components/cookie-consent";
 import Footer from "@/components/footer";
 import { ReactLenis } from "lenis/react";
 export * from "lenis/react";
@@ -8,6 +8,7 @@ export * from "lenis/react";
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <>
+      <CookieConsent />
       <ReactLenis
         root
         options={{
@@ -22,8 +23,6 @@ export function Providers({ children }: { children: React.ReactNode }) {
           syncTouchLerp: 0.1,
         }}
       >
-        {" "}
-        {/* <CookieConsent /> */}
         <main>{children}</main>
         <Footer />
       </ReactLenis>

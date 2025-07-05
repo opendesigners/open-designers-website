@@ -60,13 +60,17 @@ const Details = () => {
     <section className="overflow-hidden h-screen" ref={sectionRef}>
       <div className="h-full flex flex-col items-center justify-center">
         <div className="flex items-center justify-center mb-8">
-          <Image src={logo} alt="Logo" className="w-[65px] object-contain" />
+          <Image
+            src={logo}
+            alt="Open Designers logo icon"
+            className="w-[40px] lg:w-[65px] object-contain"
+          />
         </div>
 
         <div className="text-[#0E0E0E80]">
           <h1
             ref={textRef}
-            className="text-[2.5rem] lg:text-[4.5rem] font-light text-center"
+            className="text-[2.3rem] lg:text-[4.5rem] font-light text-center"
           >
             Every contribution on Open Designers does more than share a file it
             strengthens a global culture of collaboration. Whether you&apos;re

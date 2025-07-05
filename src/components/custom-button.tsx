@@ -25,7 +25,7 @@ const CustomButton = () => {
 
           <Image
             src={discord}
-            alt="Discord"
+            alt="Discord logo icon"
             className="object-contain h-[25px] w-[25px]"
           />
         </Button>
@@ -43,7 +43,7 @@ const CustomButton = () => {
           </span>
           <Image
             src={github}
-            alt="Github"
+            alt="GitHub logo icon"
             className="object-contain h-[25px] w-[25px]"
           />
         </Button>

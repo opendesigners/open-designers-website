@@ -34,17 +34,21 @@ export default function Home() {
 
           <div className="flex items-center flex-wrap justify-center gap-4">
             <BlackButton>
-              <Image src={figma} alt="figma" className="w-6 h-6" />
+              <Image src={figma} alt="Figma logo icon" className="w-6 h-6" />
               <span className="text-lg font-light">Figma Contributions</span>
             </BlackButton>
 
             <BlackButton>
-              <Image src={code} alt="code" className="w-6 h-6" />
+              <Image src={code} alt="Code icon" className="w-6 h-6" />
               <span className="text-lg font-light">Open Devs</span>
             </BlackButton>
 
             <BlackButton>
-              <Image src={pixel} alt="pixel" className="w-6 h-6" />
+              <Image
+                src={pixel}
+                alt="Pixel Scout logo icon"
+                className="w-6 h-6"
+              />
               <span className="text-lg font-light">Pixel Scout</span>
             </BlackButton>
           </div>

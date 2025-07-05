@@ -44,7 +44,7 @@ const Navbar = () => {
             className="flex items-baseline cursor-pointer object-fit w-[120px] lg:w-[130px]"
             id="logo-cover"
           >
-            <Image src={logo} alt="logo" />
+            <Image src={logo} alt="Open Designers logo" />
           </div>
         </Link>
 
@@ -71,7 +71,11 @@ const Navbar = () => {
 
         <div className="flex items-center justify-center gap-2">
           <BlackButton className="h-10 lg:h-12">
-            <Image src={pixel} alt="pixel" className="w-6 h-6" />
+            <Image
+              src={pixel}
+              alt="Pixel Scout logo icon"
+              className="w-6 h-6"
+            />
             <span className="font-light">Pixel Scout</span>
           </BlackButton>
 

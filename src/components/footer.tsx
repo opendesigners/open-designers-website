@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <Image
               src={logo}
-              alt="logo"
+              alt="Open Designers logo"
               className="w-[200px] mx-auto"
               unoptimized
             />

@@ -106,7 +106,7 @@ export default function CookieConsent() {
     >
       <div className="mx-3 mb-3 dark:bg-card bg-background border border-border rounded-lg">
         <div className="flex items-center justify-between p-3">
-          <h1 className="text-lg font-medium text-black">
+          <h1 className="text-lg font-medium text-black tracking-normal!">
             Manage Cookie Preferences
           </h1>
           <CookieIcon className="h-[1.2rem] w-[1.2rem]" color="#000" />
