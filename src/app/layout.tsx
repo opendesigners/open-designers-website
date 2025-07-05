@@ -41,6 +41,7 @@ export const metadata: Metadata = {
         type: "image/png",
       },
     ],
+    url: "https://open-designers.org",
   },
   twitter: {
     card: "summary_large_image",
