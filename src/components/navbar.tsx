@@ -37,56 +37,50 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="container mx-auto pt-6 px-4">
-      <div className="p-3 relative bg-[#1C1C1CE0] rounded-t-lg lg:rounded-t-full rounded-b-lg lg:rounded-b-full flex justify-between items-center">
-        <Link href="/" onClick={() => setOpen(false)}>
-          <div
-            className="flex items-baseline cursor-pointer object-fit w-[120px] lg:w-[130px]"
-            id="logo-cover"
-          >
-            <Image src={logo} alt="Open Designers logo" />
-          </div>
-        </Link>
-
-        <ul
-          className={`${
-            open ? "flex -mt-2" : "hidden"
-          }  lg:items-center gap-8 flex-col lg:flex-row lg:mt-0 lg:flex absolute top-full left-0 right-0 bg-[#1C1C1CE0] lg:relative lg:bg-transparent p-4 lg:p-0 rounded-b-xl lg:rounded-none`}
-          id="links"
+    <div className="p-2 max-w-5xl sticky top-4 mx-auto bg-[#1C1C1CE0] rounded-t-lg lg:rounded-t-full rounded-b-lg lg:rounded-b-full flex justify-between items-center backdrop-blur-24  z-50">
+      <Link href="/" onClick={() => setOpen(false)}>
+        <div
+          className="flex items-baseline cursor-pointer object-fit w-[120px] lg:w-[130px]"
+          id="logo-cover"
         >
-          {links.map((link, index) => (
-            <li key={index}>
-              <Link
-                href={link.route}
-                className={`relative text-[#FFFFFF99] ${
-                  pathname === `${link.route}` ? "text-[#FFFFFF]" : ""
-                }`}
-                onClick={() => setOpen(false)}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+          <Image src={logo} alt="Open Designers logo" />
+        </div>
+      </Link>
 
-        <div className="flex items-center justify-center gap-2">
-          <BlackButton className="h-10 lg:h-12">
-            <Image
-              src={pixel}
-              alt="Pixel Scout logo icon"
-              className="w-6 h-6"
-            />
-            <span className="font-light">Pixel Scout</span>
-          </BlackButton>
+      <ul
+        className={`${
+          open ? "flex -mt-2" : "hidden"
+        }  lg:items-center gap-8 flex-col lg:flex-row lg:mt-0 lg:flex absolute top-full left-0 right-0 bg-[#1C1C1CE0] lg:relative lg:bg-transparent p-4 lg:p-0 rounded-b-xl lg:rounded-none`}
+        id="links"
+      >
+        {links.map((link, index) => (
+          <li key={index}>
+            <Link
+              href={link.route}
+              className={`relative text-[#FFFFFF99] ${
+                pathname === `${link.route}` ? "text-[#FFFFFF]" : ""
+              }`}
+              onClick={() => setOpen(false)}
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
 
-          <div className="lg:hidden cursor-pointer">
-            <button onClick={() => setOpen((open) => !open)}>
-              <MenuIcon color="#fff" size={30} />
-            </button>
-          </div>
+      <div className="flex items-center justify-center gap-2">
+        <BlackButton className="h-10 lg:h-12">
+          <Image src={pixel} alt="Pixel Scout logo icon" className="w-6 h-6" />
+          <span className="font-light">Pixel Scout</span>
+        </BlackButton>
+
+        <div className="lg:hidden cursor-pointer">
+          <button onClick={() => setOpen((open) => !open)}>
+            <MenuIcon color="#fff" size={30} />
+          </button>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

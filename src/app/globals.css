@@ -112,6 +112,12 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@layer utilities {
+  .backdrop-blur-24 {
+    backdrop-filter: blur(24px);
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

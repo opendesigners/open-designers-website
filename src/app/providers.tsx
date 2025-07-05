@@ -2,6 +2,7 @@
 
 import CookieConsent from "@/components/cookie-consent";
 import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 import { ReactLenis } from "lenis/react";
 export * from "lenis/react";
 
@@ -23,6 +24,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
           syncTouchLerp: 0.1,
         }}
       >
+        <Navbar />
         <main>{children}</main>
         <Footer />
       </ReactLenis>

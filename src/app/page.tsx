@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "@/components/header";
 
 import figma from "@/public/figma.png";
 import code from "@/public/code.png";
@@ -15,7 +14,7 @@ import { does, team, trive } from "@/constants/data";
 export default function Home() {
   return (
     <>
-      <Header>
+      <header className="hero-background">
         <section className="p-4 container mx-auto lg:w-[700px] w-full space-y-10 py-20 lg:py-30">
           <h1 className="text-[2.5rem] lg:text-[5rem] text-center text-[#0E0E0E] font-[400] leading-[98%]">
             Design, build, and share together. We are open.
@@ -53,7 +52,7 @@ export default function Home() {
             </BlackButton>
           </div>
         </section>
-      </Header>
+      </header>
 
       <section className="bg-[#FBF9F5] px-4 py-20">
         <div className="container mx-auto">
